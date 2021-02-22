@@ -1,0 +1,77 @@
+.texto
+{	
+	font-weight: bold;
+	margin: 2em 0em 0em 1em;
+	border-style: none;
+	position: relative;
+}
+
+.input
+{
+	margin-top: 1em;
+	margin-left: 2em;
+	padding: 1em;
+	text-align: center;
+	border-radius: 7px;
+	border-color: hsl(0, 0, 80%);
+	border-style: solid;
+	position: relative;
+}
+
+.button
+{
+	font-weight: bold;
+	margin: 1em 6em 0em 7.2em;
+	padding: 1em 6.2em 1em 6.2em;
+	background-color:hsl(199, 75%, 13%);
+	color:hsl(0,0%,100%);
+	border-radius: 10px;
+	border-style: none;
+	cursor: pointer;
+	pointer-events: auto;
+	position: relative;
+	outline: none;
+	outline-offset:none; 
+}
+
+.fieldset
+{
+	padding: 0em 0em 0em 0em;
+	margin: 0.5em 100em 0em 0em;
+	border-style: solid;
+}
+
+.field
+{
+	padding: 0em 0em 2.5em 0em;
+	margin: 0em 94.9em 0em 0em;
+	border-style: solid;
+	position: static;
+}
+
+.divisao
+{
+	border-style: solid;
+	margin: 0em 0em 0em 0em;
+	padding: 1em 0em 2em 0em;
+	position: relative;
+}
+
+.septitulo
+{
+	border-style: solid;
+	margin: 0em 0em 0em 0em;
+	padding: 0em 4.6em 0em 15em;
+	position: absolute;
+}
+
+.titulo
+{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16;
+	position: relative;
+	border-style: none;
+	margin: 0em 0em 1em -12em;
+	padding: 0em 0em 0em 0em;
+}

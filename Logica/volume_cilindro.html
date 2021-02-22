@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha()
+	{
+		document.write("<br><br>");
+	}
+
+	function mostra(parametros)
+	{
+		document.write(parametros);
+		pulaLinha();
+	}
+
+	function calculaVolumeCilindro(pi,raio, altura)
+	{
+		var volumeCilindro = pi * (raio * raio) * altura;
+		return volumeCilindro;
+	}
+
+	var teste1 = calculaVolumeCilindro(3.14, 3.1, 10);
+	var teste2 = calculaVolumeCilindro(3.14, 2.5, 7);
+
+	mostra("O volume do cilindro calculado é: " + teste1 + " cm²");
+	mostra("O volume do cilindro calculado é: " + teste2 + " cm²")
+
+</script>

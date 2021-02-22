@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha()
+	{
+		document.write("<br><br>")
+	}
+
+	function mostra(parametros)
+	{
+		document.write("<h1>" + parametros + "</h1>");
+		pulaLinha();
+	}
+
+	var descobrimentoDoBrasil = 1500; //ano 
+	var anoAtual = 2021; // ano
+	var tempoParaProcriar = 28; //anos
+	var anosPassados = anoAtual - descobrimentoDoBrasil;
+	var geracao = anosPassados / tempoParaProcriar;
+
+	mostra("Se passaram " + Math.round(geracao) + " gerações");
+</script>

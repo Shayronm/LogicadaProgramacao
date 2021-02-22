@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha()
+	{
+		document.write("<br><br>");
+	}
+
+	function mostra(parametros)
+	{
+		document.write(parametros);
+		pulaLinha();
+	}
+
+	function tabuada(multiplicando, multiplicador)
+	{
+		return multiplicando * multiplicador;
+	}
+
+	var tentativas = 1;
+
+	while(tentativas <= 3){
+
+		var multiplicador = 1;
+		var multiplicando = parseInt(prompt("Digite a tabuada que você quer ver: "));
+		var limite = 10;
+		var resultado = tabuada(multiplicando, multiplicador);
+
+		while(multiplicador <= limite)
+		{
+			mostra(multiplicando * multiplicador);
+			multiplicador = multiplicador + 1;
+			pulaLinha();
+		}
+
+		alert(tentativas);
+
+		tentativas = tentativas + 1;
+	}
+
+	mostra("FIM");
+	
+
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<title></title>
+
+</head>
+<body>
+
+<script>
+
+	function pulaLinha()
+	{
+		document.write("<br><br>");
+	}
+
+	function mostra(parametros)
+	{
+		document.write(parametros);
+		pulaLinha();
+	}
+
+	function formatacao(n)
+	{
+		n =	toLocaleString("pt-BR", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+		return n;
+	}
+
+	var totalFuncionario = parseInt(prompt("Informe a quantidade de funcionarios: "));
+
+	var contador = 1;
+
+	var acumuladorSalario = 0;
+
+	while(contador <= totalFuncionario)
+	{
+		var salario = parseInt(prompt("Infome o salário dos funcionarios: "));
+		acumuladorSalario = acumuladorSalario + salario;
+		contador++;
+	}
+
+	var mediaDosSalarios = acumuladorSalario / totalFuncionario;
+
+	formatacao = mediaDosSalarios.toLocaleString("pt-BR", {
+	minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+	mostra("A média dos salários dos funcionarios são: " + formatacao);
+
+
+</script>
+
+</body>
+</html>
+
+
